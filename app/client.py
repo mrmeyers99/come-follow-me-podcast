@@ -20,6 +20,7 @@ class Client:
                 flattened_chapters.append(list(map(lambda x: m.group(1) + ' ' + str(x), range(int(m.group(2)), int(m.group(3))))))
             else:
                 flattened_chapters.append(m)
+        print(flattened_chapters)
         return flattened_chapters
 
     def get_lesson_for_week(self, week):
