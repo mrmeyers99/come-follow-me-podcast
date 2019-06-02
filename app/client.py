@@ -10,7 +10,18 @@ import json
 
 class Client:
 
-#https://media2.ldscdn.org/assets/scriptures/the-pearl-of-great-price/2015-11-0140-joseph-smith-matthew-male-voice-64k-eng.mp3?download=true
+    def split_chapters(self, chapter_info):
+        flattened_chapters = []
+        chapters = chapter_info.split('; ')
+        for chapter in chapters:
+            m = re.search("(\\w+)\\s*(\\d+)–(\\d+)", chapter)
+
+            if m:
+                flattened_chapters.append(list(map(lambda x: m.group(1) + ' ' + str(x), range(int(m.group(2)), int(m.group(3))))))
+            else:
+                flattened_chapters.append(m)
+        return flattened_chapters
+
     def get_lesson_for_week(self, week):
 
         r = requests.get(url="https://www.lds.org/study/manual/come-follow-me-for-individuals-and-families-new-testament-2019/" + str(week) + "?lang=eng")
@@ -42,7 +53,7 @@ class Client:
         start_date = m.group(2)
         end_month = m.group(3)
         end_date = m.group(4)
-        chapters = m.group(5).split('; ')
+        chapters = self.split_chapters(m.group(5))
         title = m.group(6)
 
         urls = json.load(open("book_urls.json"))
