@@ -3,7 +3,7 @@ from datetime import datetime
 import json
 
 from app.client import Client
-
+from flask import Response
 
 @app.route('/')
 @app.route('/index')
@@ -60,7 +60,7 @@ def index():
     info += """
 </channel>
 </rss>"""
-    return info
+    return Response(info, mimetype='text/xml')
 
 
 @app.route('/urls')
