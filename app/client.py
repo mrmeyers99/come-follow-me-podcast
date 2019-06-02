@@ -61,8 +61,7 @@ class Client:
             "start_date": datetime.strptime(start_month + ' ' + start_date + ' 2019', '%B %d %Y'),
             "end_date": datetime.strptime((end_month or start_month) + ' ' + end_date + ' 2019', '%B %d %Y'),
             "chapters": [{"name": c, "url": urls[c]}
-                         for chapter in chapters
-                         for c in chapter.split('–')]
+                         for c in chapters]
         }
         # print(start_month, 'start_date =', start_date, 'end_month =', end_month, 'end_date =', end_date, chapters, title)
         # print(json.dumps(chapters_json))
