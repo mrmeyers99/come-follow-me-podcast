@@ -11,7 +11,7 @@ import json
 class Client:
 
 #https://media2.ldscdn.org/assets/scriptures/the-pearl-of-great-price/2015-11-0140-joseph-smith-matthew-male-voice-64k-eng.mp3?download=true
-    def get_episodes_for_week(self, week):
+    def get_lesson_for_week(self, week):
 
         r = requests.get(url="https://www.lds.org/study/manual/come-follow-me-for-individuals-and-families-new-testament-2019/" + str(week) + "?lang=eng")
 
@@ -45,16 +45,15 @@ class Client:
         chapters = m.group(5).split('; ')
         title = m.group(6)
 
-        chapters_json = list(map(lambda c: {
-            "name": c,
-            "url": "x"
-        }, chapters))
-        week_json = {
+        return {
             "start_date": datetime.strptime(start_month + ' ' + start_date + ' 2019', '%B %d %Y'),
             "end_date": datetime.strptime((end_month or start_month) + ' ' + end_date + ' 2019', '%B %d %Y'),
-            "chapters": chapters_json
+            "chapters": list(map(lambda c: {
+                "name": c,
+                "url": "x"
+            }, chapters))
         }
-        print(start_month, 'start_date =', start_date, 'end_month =', end_month, 'end_date =', end_date, chapters, title)
-        print(json.dumps(chapters_json))
-        print(json.dumps(week_json))
+        # print(start_month, 'start_date =', start_date, 'end_month =', end_month, 'end_date =', end_date, chapters, title)
+        # print(json.dumps(chapters_json))
+        # print(json.dumps(week_json))
 
