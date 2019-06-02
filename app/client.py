@@ -52,10 +52,9 @@ class Client:
         week_json = {
             "start_date": datetime.strptime(start_month + ' ' + start_date + ' 2019', '%B %d %Y'),
             "end_date": datetime.strptime((end_month or start_month) + ' ' + end_date + ' 2019', '%B %d %Y'),
-            "chapters": {
-                chapters_json
-            }
+            "chapters": chapters_json
         }
         print(start_month, 'start_date =', start_date, 'end_month =', end_month, 'end_date =', end_date, chapters, title)
         print(json.dumps(chapters_json))
+        print(json.dumps(week_json))
 
