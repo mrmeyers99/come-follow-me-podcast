@@ -5,6 +5,7 @@ import re
 from lxml import etree
 from io import StringIO
 from datetime import datetime
+import json
 
 
 class Client:
@@ -48,13 +49,13 @@ class Client:
             "name": c,
             "url": "x"
         }, chapters)
-        # return {
-        #     "start_date": datetime.strptime(start_month + ' ' + start_date + ' 2019', '%B %d %Y'),
-        #     "end_date": datetime.strptime((end_month or start_month) + ' ' + end_date + ' 2019', '%B %d %Y'),
-        #     "chapters": {
-        #         chapters_json
-        #     }
-        # }
+        week_json = {
+            "start_date": datetime.strptime(start_month + ' ' + start_date + ' 2019', '%B %d %Y'),
+            "end_date": datetime.strptime((end_month or start_month) + ' ' + end_date + ' 2019', '%B %d %Y'),
+            "chapters": {
+                chapters_json
+            }
+        }
         print(start_month, 'start_date =', start_date, 'end_month =', end_month, 'end_date =', end_date, chapters, title)
-        print(chapters_json)
+        print(json.dumps(chapters_json))
 
