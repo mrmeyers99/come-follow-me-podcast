@@ -17,9 +17,9 @@ class Client:
             m = re.search("(\\w+)\\s*(\\d+)–(\\d+)", chapter)
 
             if m:
-                flattened_chapters.append(list(map(lambda x: m.group(1) + ' ' + str(x), range(int(m.group(2)), int(m.group(3))))))
+                flattened_chapters.extend(list(map(lambda x: m.group(1) + ' ' + str(x), range(int(m.group(2)), int(m.group(3))))))
             else:
-                flattened_chapters.append(m)
+                flattened_chapters.append(chapter)
         print(flattened_chapters)
         return flattened_chapters
 
