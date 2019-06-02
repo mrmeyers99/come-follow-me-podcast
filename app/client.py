@@ -59,6 +59,7 @@ class Client:
 
         urls = json.load(open("book_urls.json"))
         return {
+            "title": title,
             "start_date": datetime.strptime(start_month + ' ' + start_date + ' 2019', '%B %d %Y'),
             "end_date": datetime.strptime((end_month or start_month) + ' ' + end_date + ' 2019', '%B %d %Y'),
             "chapters": [{"name": c, "url": urls[c]}
