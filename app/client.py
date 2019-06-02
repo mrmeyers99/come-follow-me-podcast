@@ -45,10 +45,10 @@ class Client:
         chapters = m.group(5).split('; ')
         title = m.group(6)
 
-        chapters_json = map(lambda c: {
+        chapters_json = list(map(lambda c: {
             "name": c,
             "url": "x"
-        }, chapters)
+        }, chapters))
         week_json = {
             "start_date": datetime.strptime(start_month + ' ' + start_date + ' 2019', '%B %d %Y'),
             "end_date": datetime.strptime((end_month or start_month) + ' ' + end_date + ' 2019', '%B %d %Y'),
