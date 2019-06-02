@@ -1,5 +1,6 @@
 from app import app
 from datetime import datetime
+import json
 
 from app.client import Client
 
@@ -16,3 +17,9 @@ def index():
     for chapter in lesson['chapters']:
         info += chapter['name'] + ' ' + chapter['url'] + "<br>"
     return info
+
+
+@app.route('/urls')
+def urls():
+    d2 = json.load(open("book_urls.json"))
+    return json.dumps(d2)
