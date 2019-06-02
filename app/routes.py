@@ -44,7 +44,6 @@ def index():
 <itunes:subtitle></itunes:subtitle>"""
 
     for chapter in lesson['chapters']:
-        info += chapter['name'] + ' ' + chapter['url'] + "<br>"
 
         info += """
 <item>
