@@ -46,21 +46,24 @@ def index():
 <itunes:subtitle></itunes:subtitle>"""
 
     chapter_date = lesson['start_date']
-    index = 0
+    chapters = lesson['chapters']
 
-    for chapter in lesson['chapters']:
+    for index in range(0, len(chapters)):
+        if chapter_date > datetime.now():
+            break
+
         info += """
 <item>
-  <title>""" + lesson['title'] + ' - ' + chapter['name'] + """</title>
-  <description>""" + lesson['title'] + ' - ' + chapter['name'] + """</description>
+  <title>""" + lesson['title'] + ' - ' + chapters[index]['name'] + """</title>
+  <description>""" + lesson['title'] + ' - ' + chapters[index]['name'] + """</description>
   <itunes:summary></itunes:summary>
   <itunes:subtitle></itunes:subtitle>
   <itunesu:category itunesu:code="112" />
-  <enclosure url=\"""" + chapter['url'] + """\" type="audio/mpeg" />
-  <guid>""" + chapter['url'] + """</guid>
+  <enclosure url=\"""" + chapters[index]['url'] + """\" type="audio/mpeg" />
+  <guid>""" + chapters[index]['url'] + """</guid>
   <pubDate>""" + chapter_date.strftime('%a, %d %b %Y %H:%M:%S EST') + """</pubDate>
 </item>"""
-        if index % math.ceil(len(lesson['chapters']) / 5) == 0:
+        if index % math.ceil(len(chapters) / 5) == 0:
             chapter_date = chapter_date + timedelta(days=1)
         index += 1
 
