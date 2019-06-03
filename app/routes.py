@@ -1,3 +1,5 @@
+import math
+
 from app import app
 from datetime import datetime, timedelta
 import json
@@ -44,6 +46,7 @@ def index():
 <itunes:subtitle></itunes:subtitle>"""
 
     chapter_date = lesson['start_date']
+    index = 0
 
     for chapter in lesson['chapters']:
         info += """
@@ -57,7 +60,9 @@ def index():
   <guid>""" + chapter['url'] + """</guid>
   <pubDate>""" + chapter_date.strftime('%a, %d %b %Y %H:%M:%S EST') + """</pubDate>
 </item>"""
-        chapter_date = chapter_date + timedelta(days=1)
+        if index % math.ceil(len(lesson['chapters']) / 5) == 0:
+            chapter_date = chapter_date + timedelta(days=1)
+        index += 1
 
     info += """
 </channel>
