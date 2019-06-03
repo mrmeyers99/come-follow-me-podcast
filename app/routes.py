@@ -1,5 +1,5 @@
 from app import app
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
 
 from app.client import Client
@@ -43,8 +43,9 @@ def index():
 <itunes:summary></itunes:summary>
 <itunes:subtitle></itunes:subtitle>"""
 
-    for chapter in lesson['chapters']:
+    chapter_date = lesson['start_date']
 
+    for chapter in lesson['chapters']:
         info += """
 <item>
   <title>""" + lesson['title'] + ' - ' + chapter['name'] + """</title>
@@ -54,11 +55,14 @@ def index():
   <itunesu:category itunesu:code="112" />
   <enclosure url=\"""" + chapter['url'] + """\" type="audio/mpeg" />
   <guid>""" + chapter['url'] + """</guid>
-  <pubDate>""" + lesson['start_date'].strftime('%a, %d %b %Y %H:%M:%S EST') + """</pubDate>
+  <pubDate>""" + chapter_date.strftime('%a, %d %b %Y %H:%M:%S EST') + """</pubDate>
 </item>"""
+        chapter_date = chapter_date + timedelta(days=1)
+
     info += """
 </channel>
 </rss>"""
+
     return Response(info, mimetype='text/xml')
 
 
