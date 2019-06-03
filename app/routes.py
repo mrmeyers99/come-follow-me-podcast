@@ -6,10 +6,16 @@ import json
 
 from app.client import Client
 from flask import Response
+from flask_restful import reqparse
 
 @app.route('/')
 @app.route('/index')
 def index():
+
+    parser = reqparse.RequestParser()
+    parser.add_argument('speadOverDays', type=int, store_missing=True, default=5)
+    args = parser.parse_args()
+
     current_week = int(datetime.today().strftime("%V")) - 1
 
     client = Client()
@@ -63,7 +69,7 @@ def index():
   <guid>""" + chapters[index]['url'] + """</guid>
   <pubDate>""" + chapter_date.strftime('%a, %d %b %Y %H:%M:%S EST') + """</pubDate>
 </item>"""
-        if index % math.ceil(len(chapters) / 5) == 0:
+        if index % math.ceil(len(chapters) / args['speadOverDays']) == 0:
             chapter_date = chapter_date + timedelta(days=1)
         index += 1
 
