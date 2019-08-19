@@ -10,11 +10,12 @@ import json
 
 class Client:
 
+
     def split_chapters(self, chapter_info):
         flattened_chapters = []
         chapters = chapter_info.split('; ')
         for chapter in chapters:
-            m = re.search("(\\w+)\\s*(\\d+)–(\\d+)", chapter)
+            m = re.search("([\\w\\s]+)\\s*(\\d+)–(\\d+)", chapter)
 
             if m:
                 flattened_chapters.extend(list(map(lambda x: m.group(1) + ' ' + str(x), range(int(m.group(2)), int(m.group(3)) + 1))))
@@ -46,10 +47,7 @@ class Client:
 
                 print ("Group {groupNum} found at {start}-{end}: {group}".format(groupNum = groupNum, start = match.start(groupNum), end = match.end(groupNum), group = match.group(groupNum)))
 
-
         m = re.search("(\\w+)\\s*(\\d+)–([A-Za-z]*)\\s*(\\d+)\\.\\s+(.*):\\s*‘(.*)’", res)
-        #re.search('(\w+\s*\d+–\d+)\.\s+(.*):\s*‘(.*)’', res)
-        #re.search('(.*)\.\s*(.*):\s*(.*)', res)
         start_month = m.group(1)
         start_date = m.group(2)
         end_month = m.group(3)

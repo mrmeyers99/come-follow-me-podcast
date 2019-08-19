@@ -62,17 +62,17 @@ print("""<?xml version="1.0" encoding="utf-8"?>
 for chapter in chapters:
     split = chapter.split(' ')
     url = 'https://media2.ldscdn.org/assets/scriptures/the-new-testament/2015-11-0010-' + split[0].lower() + '-' + ('%02d' % int(split[1])) + '-male-voice-64k-eng.mp3?download=true'
-    print("""
-<item>
-  <title>""" + title + ' - ' + chapter + """</title>
-  <description>""" + title + ' - ' + chapter + """</description>
-  <itunes:summary></itunes:summary>
-  <itunes:subtitle></itunes:subtitle>
-  <itunesu:category itunesu:code="112" />
-  <enclosure url=\"""" + url + """\" type="audio/mpeg" />
-  <guid>""" + url + """</guid>
-  <pubDate>""" + start_date.strftime('%a, %d %b %Y %H:%M:%S EST') + """</pubDate>
-</item>""")
+        print("""
+    <item>
+      <title>""" + title + ' - ' + chapter + """</title>
+      <description>""" + title + ' - ' + chapter + """</description>
+      <itunes:summary></itunes:summary>
+      <itunes:subtitle></itunes:subtitle>
+      <itunesu:category itunesu:code="112" />
+      <enclosure url=\"""" + url + """\" type="audio/mpeg" />
+      <guid>""" + url + """</guid>
+      <pubDate>""" + start_date.strftime('%a, %d %b %Y %H:%M:%S EST') + """</pubDate>
+    </item>""")
 
 print("""
 </channel>
