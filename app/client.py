@@ -45,8 +45,8 @@ class Client:
 
         return {
             "title": lesson['title'],
-            "start_date": lesson['begin'],
-            "end_date": lesson['end'],
+            "start_date": datetime.strptime(lesson['begin'], '%B %d %Y'),
+            "end_date": datetime.strptime(lesson['end'], '%B %d %Y'),
             "chapters": [{"name": c.replace(u'\xa0', u' '), "url": u}
                          for c in chapters for u in urls[c.replace(u'\xa0', u' ')]]
         }
