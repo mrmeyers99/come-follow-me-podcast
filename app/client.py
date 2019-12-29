@@ -1,4 +1,4 @@
-# coding=utf8
+# -*- coding: utf-8 -
 
 import requests
 import re
@@ -10,58 +10,45 @@ import json
 
 class Client:
 
-
     def split_chapters(self, chapter_info):
         flattened_chapters = []
         chapters = chapter_info.split('; ')
         for chapter in chapters:
-            m = re.search("([\\w\\s]+)\\s+(\\d+)–(\\d+)", chapter)
-
-            if m:
-                flattened_chapters.extend(list(map(lambda x: m.group(1) + ' ' + str(x), range(int(m.group(2)), int(m.group(3)) + 1))))
+            if chapter == 'Enos–Words of Mormon':
+                flattened_chapters.append('Enos 1')
+                flattened_chapters.append('Jarom 1')
+                flattened_chapters.append('Omni 1')
+                flattened_chapters.append('Words of Mormon 1')
             else:
-                flattened_chapters.append(chapter)
+                m = re.search("([\\w\\s]+)\\s+(\\d+)–(\\d+)", chapter)
+
+                if m:
+                    flattened_chapters.extend(list(map(lambda x: m.group(1) + ' ' + str(x), range(int(m.group(2)), int(m.group(3)) + 1))))
+                else:
+                    flattened_chapters.append(chapter)
         print(flattened_chapters)
         return flattened_chapters
 
-    def get_lesson_for_week(self, week):
+    def find_lesson(self, calendar, date):
+        for lesson in calendar:
+            print(lesson)
+            if datetime.strptime(lesson['begin'], '%B %d %Y') <= date <= datetime.strptime(lesson['end'], '%B %d %Y'):
+                return lesson
+        raise Exception('Could not find lesson')
 
-        r = requests.get(url="https://www.lds.org/study/manual/come-follow-me-for-individuals-and-families-new-testament-2019/" + str(week) + "?lang=eng")
-
-        parser = etree.HTMLParser(encoding="utf-8")
-        r.encoding = "utf-8"
-        print(r.encoding)
-        #print(r.text)
-        tree = etree.parse(StringIO(r.text), parser)
-        res = tree.xpath("/html/head/meta[@name='description']/@content")[0]
-        print(res)
-        regex = r"(\w+)\s*(\d+)–([A-Za-z]*)\s*(\d+)\.\s+(.*):\s*‘(.*)’"
-        matches = re.finditer(regex, res, re.MULTILINE)
-
-        for matchNum, match in enumerate(matches, start=1):
-
-            print("Match {matchNum} was found at {start}-{end}: {match}".format(matchNum = matchNum, start = match.start(), end = match.end(), match = match.group()))
-
-            for groupNum in range(0, len(match.groups())):
-                groupNum = groupNum + 1
-
-                print ("Group {groupNum} found at {start}-{end}: {group}".format(groupNum = groupNum, start = match.start(groupNum), end = match.end(groupNum), group = match.group(groupNum)))
-
-        m = re.search("(\\w+)\\s*(\\d+)–([A-Za-z]*)\\s*(\\d+)\\.\\s+(.*):\\s*‘(.*)’", res)
-        start_month = m.group(1)
-        start_date = m.group(2)
-        end_month = m.group(3)
-        end_date = m.group(4)
-        chapters = self.split_chapters(m.group(5))
-        title = m.group(6)
-
+    def get_lesson_for_date(self, date):
+        calendar = json.load(open("calendar.json"))
         urls = json.load(open("book_urls.json"))
+
+        lesson = self.find_lesson(calendar, date)
+        chapters = self.split_chapters(lesson['chapters'])
+
         return {
-            "title": title,
-            "start_date": datetime.strptime(start_month + ' ' + start_date + ' 2019', '%B %d %Y'),
-            "end_date": datetime.strptime((end_month or start_month) + ' ' + end_date + ' 2019', '%B %d %Y'),
-            "chapters": [{"name": c, "url": urls[c]}
-                         for c in chapters]
+            "title": lesson['title'],
+            "start_date": lesson['begin'],
+            "end_date": lesson['end'],
+            "chapters": [{"name": c.replace(u'\xa0', u' '), "url": u}
+                         for c in chapters for u in urls[c.replace(u'\xa0', u' ')]]
         }
         # print(start_month, 'start_date =', start_date, 'end_month =', end_month, 'end_date =', end_date, chapters, title)
         # print(json.dumps(chapters_json))

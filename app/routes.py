@@ -16,10 +16,8 @@ def index():
     parser.add_argument('speadOverDays', type=int, store_missing=True, default=5)
     args = parser.parse_args()
 
-    current_week = int(datetime.today().strftime("%V")) - 1
-
     client = Client()
-    lesson = client.get_lesson_for_week(current_week)
+    lesson = client.get_lesson_for_date(datetime.today())
 
     info = """<?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunesu="http://www.itunesu.com/feed" version="2.0">
