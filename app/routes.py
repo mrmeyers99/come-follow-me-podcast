@@ -29,7 +29,7 @@ def index():
 <webMaster>mrmeyers99@gmail.com (Michael)</webMaster>
 <managingEditor>mrmeyers99@gmail.com (Michael)</managingEditor>
 <image>
-<url>http://www.YourSite.com/ImageSize300X300.jpg</url>
+<url>https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/400x640/slctemple2.jpg</url>
 <title>Title or description of your logo</title>
 <link>http://www.YourSite.com</link>
 </image>
