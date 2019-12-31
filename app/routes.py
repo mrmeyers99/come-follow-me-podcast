@@ -14,7 +14,7 @@ from xml.sax.saxutils import escape
 def index():
 
     parser = reqparse.RequestParser()
-    parser.add_argument('speadOverDays', type=int, store_missing=True, default=5)
+    parser.add_argument('spreadOverDays', type=int, store_missing=True, default=5)
     args = parser.parse_args()
 
     client = Client()
@@ -68,7 +68,7 @@ def index():
   <guid>""" + escape(chapters[index]['url']) + """</guid>
   <pubDate>""" + chapter_date.strftime('%a, %d %b %Y %H:%M:%S EST') + """</pubDate>
 </item>"""
-        if index % math.ceil(len(chapters) / args['speadOverDays']) == 0:
+        if index % math.ceil(len(chapters) / args['spreadOverDays']) == 0:
             chapter_date = chapter_date + timedelta(days=1)
         index += 1
         chapter_date = chapter_date + timedelta(seconds=1)
