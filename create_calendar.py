@@ -120,6 +120,14 @@ def main():
                 'end':  "May 31 " + str(year),
                 'image': "https://assets.ldscdn.org/e5/6e/e56e47a9820de4fbdbdd9eaa12808c02f5f518dd/alma_younger_talking_men_mormon.png"
             }
+        elif week == 14 and year == 2020:
+            lesson = {
+                'chapters': ["Living Christ"],
+                'title': "He Shall Rise with Healing in His Wings",
+                'begin': "March 30 " + str(year),
+                'end':  "April 12 " + str(year),
+                'image': "https://assets.ldscdn.org/56/79/56797719a7244fdf4e6ce1d788712c2e95b72907/christ_risen_apostles.png"
+            }
         else:
             lesson = fetch_lesson_info(week, manual)
 

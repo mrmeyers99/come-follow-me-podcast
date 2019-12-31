@@ -64,6 +64,7 @@ def index():
   <itunes:summary></itunes:summary>
   <itunes:subtitle></itunes:subtitle>
   <itunesu:category itunesu:code="112" />
+  <itunes:explicit>no</itunes:explicit>
   <enclosure url=\"""" + escape(chapters[index]['url']) + """\" type="audio/mpeg" />
   <guid>""" + escape(chapters[index]['url']) + """</guid>
   <pubDate>""" + chapter_date.strftime('%a, %d %b %Y %H:%M:%S EST') + """</pubDate>
