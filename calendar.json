@@ -1,38 +1,626 @@
 [
   {
-    "begin": "December 23 2019",
-    "end": "December 29 2019",
-    "chapters": "Revelation 12–22",
-    "title": "He That Overcometh Shall Inherit All Things"
+    "chapters": [
+      "Introductory Pages of the Book of Mormon"
+    ],
+    "title": "Another Testament of Jesus Christ",
+    "begin": "December 30 2020",
+    "end": "January",
+    "image": "https://assets.ldscdn.org/96/e3/96e3185eab325917fb3eb65f1d8ef5ab3429ee9c/stone_arch_doorway.png"
   },
   {
-    "begin": "December 30 2019",
-    "end": "January 5 2020",
-    "chapters": "Introductory Pages of the Book of Mormon",
-    "title": "Another Testament of Jesus Christ"
-  },
-  {
+    "chapters": [
+      "1 Nephi 1",
+      "1 Nephi 2",
+      "1 Nephi 3",
+      "1 Nephi 4",
+      "1 Nephi 5",
+      "1 Nephi 6",
+      "1 Nephi 7"
+    ],
+    "title": "I Will Go and Do",
     "begin": "January 6 2020",
     "end": "January 12 2020",
-    "chapters": "1 Nephi 1–7 2020",
-    "title": "I Will Go and Do"
+    "image": "https://assets.ldscdn.org/17/14/1714c2b8ad65c9d83065e3f7dd7c3ed0a728e327/lehi_traveling_gary_ernest_smith.png"
   },
   {
+    "chapters": [
+      "1 Nephi 8",
+      "1 Nephi 9",
+      "1 Nephi 10"
+    ],
+    "title": "Come and Partake of the Fruit",
     "begin": "January 13 2020",
     "end": "January 19 2020",
-    "chapters": "1 Nephi 8–10 2020",
-    "title":  "Come and Partake of the Fruit"
+    "image": "https://assets.ldscdn.org/cc/15/cc152ba05d93cd74bb308743fbdca657f10d4eac/lehis_dream_steven_neal.png"
   },
   {
+    "chapters": [
+      "1 Nephi 11",
+      "1 Nephi 12",
+      "1 Nephi 13",
+      "1 Nephi 14",
+      "1 Nephi 15"
+    ],
+    "title": "Armed with Righteousness and the Power of God",
     "begin": "January 20 2020",
     "end": "January 26 2020",
-    "chapters": "1 Nephi 11–15",
-    "title": "Armed with Righteousness and with the Power of God"
+    "image": "https://assets.ldscdn.org/43/46/434605292f333ccc39baa4a5721f6918cd9fdb56/sweetness_miguel_angel_gonzalez_romero.png"
   },
   {
+    "chapters": [
+      "1 Nephi 16",
+      "1 Nephi 17",
+      "1 Nephi 18",
+      "1 Nephi 19",
+      "1 Nephi 20",
+      "1 Nephi 21",
+      "1 Nephi 22"
+    ],
+    "title": "I Will Prepare the Way before You",
     "begin": "January 27 2020",
-    "end": "February 2 2020",
-    "chapters": "1 Nephi 16–22",
-    "title": "I Will Prepare the Way before You"
+    "end": "February",
+    "image": "https://assets.ldscdn.org/27/fa/27fa0a155a2184086dce13bfa8fd9f90b0e170a8/lehi_and_the_liahona_brickey.jpeg"
+  },
+  {
+    "chapters": [
+      "2 Nephi 1",
+      "2 Nephi 2",
+      "2 Nephi 3",
+      "2 Nephi 4",
+      "2 Nephi 5"
+    ],
+    "title": "We Lived after the Manner of Happiness",
+    "begin": "February 3 2020",
+    "end": "February 9 2020",
+    "image": "https://assets.ldscdn.org/cb/50/cb50d57c7953213537208a7eeb8f3f83f1a6a02e/adam_and_eve_douglas_fryer.png"
+  },
+  {
+    "chapters": [
+      "2 Nephi 6",
+      "2 Nephi 7",
+      "2 Nephi 8",
+      "2 Nephi 9",
+      "2 Nephi 10"
+    ],
+    "title": "O How Great the Plan of Our God!",
+    "begin": "February 10 2020",
+    "end": "February 16 2020",
+    "image": "https://assets.ldscdn.org/a1/4c/a14c09829ebe9bf621efb0505aea10a8e210b817/jesus_christ_atonement_gethsemane.jpeg"
+  },
+  {
+    "chapters": [
+      "2 Nephi 11",
+      "2 Nephi 12",
+      "2 Nephi 13",
+      "2 Nephi 14",
+      "2 Nephi 15",
+      "2 Nephi 16",
+      "2 Nephi 17",
+      "2 Nephi 18",
+      "2 Nephi 19",
+      "2 Nephi 20",
+      "2 Nephi 21",
+      "2 Nephi 22",
+      "2 Nephi 23",
+      "2 Nephi 24",
+      "2 Nephi 25"
+    ],
+    "title": "We Rejoice in Christ",
+    "begin": "February 17 2020",
+    "end": "February 23 2020",
+    "image": "https://assets.ldscdn.org/f0/55/f05582bcbd3cfd30d25fc11a0e0ff708bfde69e3/isaiah_scrolls.png"
+  },
+  {
+    "chapters": [
+      "2 Nephi 26",
+      "2 Nephi 27",
+      "2 Nephi 28",
+      "2 Nephi 29",
+      "2 Nephi 30"
+    ],
+    "title": "A Marvelous Work and a Wonder",
+    "begin": "February 24 2020",
+    "end": "March",
+    "image": "https://assets.ldscdn.org/9f/64/9f64b092ae11d0a436d87e11e4fc12fc33bf73e7/jesus_woman.png"
+  },
+  {
+    "chapters": [
+      "2 Nephi 31",
+      "2 Nephi 32",
+      "2 Nephi 33"
+    ],
+    "title": "This Is the Way",
+    "begin": "March 2 2020",
+    "end": "March 8 2020",
+    "image": "https://assets.ldscdn.org/18/8c/188cd9d55e49f37bdd965894d05f9e0d7d8122b0/savior_teaching_kunz.jpeg"
+  },
+  {
+    "chapters": [
+      "Jacob 1",
+      "Jacob 2",
+      "Jacob 3",
+      "Jacob 4"
+    ],
+    "title": "Be Reconciled unto God through the Atonement of Christ",
+    "begin": "March 9 2020",
+    "end": "March 15 2020",
+    "image": "https://assets.ldscdn.org/d6/b7/d6b78a7940d741ca0d1b7a31248f2c1c5b632e42/ensign_magazine_september_2017_jesus_forgiveness.png"
+  },
+  {
+    "chapters": [
+      "Jacob 5",
+      "Jacob 6",
+      "Jacob 7"
+    ],
+    "title": "The Lord Labors with Us",
+    "begin": "March 16 2020",
+    "end": "March 22 2020",
+    "image": "https://assets.ldscdn.org/5e/6f/5e6f594e4837f2d8949a39b977719491fea6aeb2/allegory_of_olive_tree_teare.png"
+  },
+  {
+    "chapters": [
+      "Enos 1",
+      "Jarom 1",
+      "Omni 1",
+      "Words of Mormon 1"
+    ],
+    "title": "He Works in Me to Do His Will",
+    "begin": "March 23 2020",
+    "end": "March 29 2020",
+    "image": "https://assets.ldscdn.org/04/d4/04d42cee58ddee809ddb53e1b301fa08412983ce/snow_jacob_lds_mormon_prophet.png"
+  },
+  {
+    "chapters": [
+      "Mosiah 1",
+      "Mosiah 2",
+      "Mosiah 3"
+    ],
+    "title": "Filled with Love towards God and All Men",
+    "begin": "April 13 2020",
+    "end": "April 19 2020",
+    "image": "https://assets.ldscdn.org/a0/bd/a0bdc84a3fdd211c68eb951c452da00d8964c109/king_benjamin_s_farewell_address.png"
+  },
+  {
+    "chapters": [
+      "Mosiah 4",
+      "Mosiah 5",
+      "Mosiah 6"
+    ],
+    "title": "A Mighty Change",
+    "begin": "April 20 2020",
+    "end": "April 26 2020",
+    "image": "https://assets.ldscdn.org/10/6b/106b745318cd696cc556c3778dc6552275e01745/king_benjamin_speaking_tower_rane.png"
+  },
+  {
+    "chapters": [
+      "Mosiah 7",
+      "Mosiah 8",
+      "Mosiah 9",
+      "Mosiah 10"
+    ],
+    "title": "In the Strength of the Lord",
+    "begin": "April 27 2020",
+    "end": "May",
+    "image": "https://assets.ldscdn.org/87/e3/87e35b9c22b770ed6427f982f6d3839d2cd9fcac/ammon_before_king_limhi.png"
+  },
+  {
+    "chapters": [
+      "Mosiah 11",
+      "Mosiah 12",
+      "Mosiah 13",
+      "Mosiah 14",
+      "Mosiah 15",
+      "Mosiah 16",
+      "Mosiah 17"
+    ],
+    "title": "A Light That Can Never Be Darkened",
+    "begin": "May 4 2020",
+    "end": "May 10 2020",
+    "image": "https://assets.ldscdn.org/d1/20/d1209c3855b2296b21758f63e4c1cbc4536167d8/illustrations_scriptures_book_of_mormon_abinadi.png"
+  },
+  {
+    "chapters": [
+      "Mosiah 18",
+      "Mosiah 19",
+      "Mosiah 20",
+      "Mosiah 21",
+      "Mosiah 22",
+      "Mosiah 23",
+      "Mosiah 24"
+    ],
+    "title": "We Have Entered into a Covenant with Him",
+    "begin": "May 11 2020",
+    "end": "May 17 2020",
+    "image": "https://assets.ldscdn.org/b2/ec/b2ec047f82a257d19909a4b1b235656c8b79f8e2/escape_limhi_people_night_guards.png"
+  },
+  {
+    "chapters": [
+      "Mosiah 25",
+      "Mosiah 26",
+      "Mosiah 27",
+      "Mosiah 28"
+    ],
+    "title": "They Were Called the People of God",
+    "begin": "May 18 2020",
+    "end": "May 24 2020",
+    "image": "https://assets.ldscdn.org/6f/b1/6fb18ca109a1eb3d1c656308dd3f8ea9bae80a73/the_conversion_of_alma.png"
+  },
+  {
+    "chapters": [
+      "Mosiah 29",
+      "Alma 1",
+      "Alma 2",
+      "Alma 3",
+      "Alma 4"
+    ],
+    "title": "They Were Steadfast and Immovable",
+    "begin": "May 25 2020",
+    "end": "May 31 2020",
+    "image": "https://assets.ldscdn.org/e5/6e/e56e47a9820de4fbdbdd9eaa12808c02f5f518dd/alma_younger_talking_men_mormon.png"
+  },
+  {
+    "chapters": [
+      "Alma 5",
+      "Alma 6",
+      "Alma 7"
+    ],
+    "title": "Have Ye Experienced This Mighty Change in Your Hearts?",
+    "begin": "June 1 2020",
+    "end": "June 7 2020",
+    "image": "https://assets.ldscdn.org/e4/e7/e4e70961d187938c81fced3d94f30403f1a332a9/jesus_black_lamb_holding_mcnaughton.png"
+  },
+  {
+    "chapters": [
+      "Alma 8",
+      "Alma 9",
+      "Alma 10",
+      "Alma 11",
+      "Alma 12"
+    ],
+    "title": "Jesus Christ Will Come to Redeem His People",
+    "begin": "June 8 2020",
+    "end": "June 14 2020",
+    "image": "https://assets.ldscdn.org/d9/b2/d9b21d3aacf2db84022819cebfa34f5d5410f920/teaching_true_doctrine.png"
+  },
+  {
+    "chapters": [
+      "Alma 13",
+      "Alma 14",
+      "Alma 15",
+      "Alma 16"
+    ],
+    "title": "Enter into the Rest of the Lord",
+    "begin": "June 15 2020",
+    "end": "June 21 2020",
+    "image": "https://assets.ldscdn.org/9c/03/9c0370cc05df30d939197fc363774f0ef426b3b0/illustrations_scriptures_book_of_mormon_alma.png"
+  },
+  {
+    "chapters": [
+      "Alma 17",
+      "Alma 18",
+      "Alma 19",
+      "Alma 20",
+      "Alma 21",
+      "Alma 22"
+    ],
+    "title": "I Will Make an Instrument of Thee",
+    "begin": "June 22 2020",
+    "end": "June 28 2020",
+    "image": "https://assets.ldscdn.org/d2/30/d230c4c320fff335a80da3c524728ba5517e5df6/ammon_king_lamoni_throne.png"
+  },
+  {
+    "chapters": [
+      "Alma 23",
+      "Alma 24",
+      "Alma 25",
+      "Alma 26",
+      "Alma 27",
+      "Alma 28",
+      "Alma 29"
+    ],
+    "title": "They Never Did Fall Away",
+    "begin": "June 29 2020",
+    "end": "July 5 2020",
+    "image": "https://assets.ldscdn.org/a3/31/a331385186e7e1fa7fa835e25790b6e99f199f98/anti_nephi_lehis_bury_weapons_of_war_jody_livingston.png"
+  },
+  {
+    "chapters": [
+      "Alma 30",
+      "Alma 31"
+    ],
+    "title": "The Virtue of the Word of God",
+    "begin": "July 6 2020",
+    "end": "July 12 2020",
+    "image": "https://assets.ldscdn.org/8b/77/8b77b6c1884ca93c890a3b25ca016461748c933e/alma_korihor_denote_there_god.png"
+  },
+  {
+    "chapters": [
+      "Alma 32",
+      "Alma 33",
+      "Alma 34",
+      "Alma 35"
+    ],
+    "title": "Plant This Word in Your Hearts",
+    "begin": "July 13 2020",
+    "end": "July 19 2020",
+    "image": "https://assets.ldscdn.org/ad/1d/ad1d908b2eb6f429fe8d04c372ee70d9a721cf3e/hands_seeds_child_children.png"
+  },
+  {
+    "chapters": [
+      "Alma 36",
+      "Alma 37",
+      "Alma 38"
+    ],
+    "title": "Look to God and Live",
+    "begin": "July 20 2020",
+    "end": "July 26 2020",
+    "image": "https://assets.ldscdn.org/36/1f/361f00ec26656633fcc78aa23c657a77899e57f7/ensign_magazine_september_2017_kneeling_prayer.png"
+  },
+  {
+    "chapters": [
+      "Alma 39",
+      "Alma 40",
+      "Alma 41",
+      "Alma 42"
+    ],
+    "title": "The Great Plan of Happiness",
+    "begin": "July 27 2020",
+    "end": "August",
+    "image": "https://assets.ldscdn.org/f7/e4/f7e487151a306d89d3141f2b69b3601472ccf4d9/mary_tomb_stone_dove.jpeg"
+  },
+  {
+    "chapters": [
+      "Alma 43",
+      "Alma 44",
+      "Alma 45",
+      "Alma 46",
+      "Alma 47",
+      "Alma 48",
+      "Alma 49",
+      "Alma 50",
+      "Alma 51",
+      "Alma 52"
+    ],
+    "title": "Stand Fast in the Faith of Christ",
+    "begin": "August 3 2020",
+    "end": "August 9 2020",
+    "image": "https://assets.ldscdn.org/f4/38/f43821c91a68b016c78ac55f07a35ddcbe40fe1a/captain_moroni_title_liberty.png"
+  },
+  {
+    "chapters": [
+      "Alma 53",
+      "Alma 54",
+      "Alma 55",
+      "Alma 56",
+      "Alma 57",
+      "Alma 58",
+      "Alma 59",
+      "Alma 60",
+      "Alma 61",
+      "Alma 62",
+      "Alma 63"
+    ],
+    "title": "Preserved by His Marvelous Power",
+    "begin": "August 10 2020",
+    "end": "August 16 2020",
+    "image": "https://assets.ldscdn.org/a1/83/a183cb1bdced10a2c63db363195de107ae0154b2/two_thousand_stripling_warriors.png"
+  },
+  {
+    "chapters": [
+      "Helaman 1",
+      "Helaman 2",
+      "Helaman 3",
+      "Helaman 4",
+      "Helaman 5",
+      "Helaman 6"
+    ],
+    "title": "The Rock of Our Redeemer",
+    "begin": "August 17 2020",
+    "end": "August 23 2020",
+    "image": "https://assets.ldscdn.org/cb/2e/cb2e143a5030e91ea4699543255cf6e3983f5f1d/the_pride_cycle.jpeg"
+  },
+  {
+    "chapters": [
+      "Helaman 7",
+      "Helaman 8",
+      "Helaman 9",
+      "Helaman 10",
+      "Helaman 11",
+      "Helaman 12"
+    ],
+    "title": "Remember the Lord",
+    "begin": "August 24 2020",
+    "end": "August 30 2020",
+    "image": "https://assets.ldscdn.org/d7/bd/d7bd5c8070d8f2c11d4e2987a2ea9ff366dcc090/tower_highway_pray_mormon_thompson.png"
+  },
+  {
+    "chapters": [
+      "Helaman 13",
+      "Helaman 14",
+      "Helaman 15",
+      "Helaman 16"
+    ],
+    "title": "Glad Tidings of Great Joy",
+    "begin": "August 31 2020",
+    "end": "September 6 2020",
+    "image": "https://assets.ldscdn.org/eb/b2/ebb2f52ceda4db2d4578989c9beda439b0a097be/samuel_the_lamanite_prophesies_friberg.png"
+  },
+  {
+    "chapters": [
+      "3 Nephi 1",
+      "3 Nephi 2",
+      "3 Nephi 3",
+      "3 Nephi 4",
+      "3 Nephi 5",
+      "3 Nephi 6",
+      "3 Nephi 7"
+    ],
+    "title": "Lift Up Your Head and Be of Good Cheer",
+    "begin": "September 7 2020",
+    "end": "September 13 2020",
+    "image": "https://assets.ldscdn.org/3f/fe/3ffeb1d40246030abd40f0ff60c89d4e6a45a8b8/nephites_sun_night_day.jpeg"
+  },
+  {
+    "chapters": [
+      "3 Nephi 8",
+      "3 Nephi 9",
+      "3 Nephi 10",
+      "3 Nephi 11"
+    ],
+    "title": "Arise and Come Forth unto Me",
+    "begin": "September 14 2020",
+    "end": "September 20 2020",
+    "image": "https://assets.ldscdn.org/cc/41/cc41e40342e6d852eb23e5389e9c754cf1495a7a/i_am_the_light_of_the_world_james_fullmer.png"
+  },
+  {
+    "chapters": [
+      "3 Nephi 12",
+      "3 Nephi 13",
+      "3 Nephi 14",
+      "3 Nephi 15",
+      "3 Nephi 16"
+    ],
+    "title": "I Am the Law, and the Light",
+    "begin": "September 21 2020",
+    "end": "September 27 2020",
+    "image": "https://assets.ldscdn.org/df/c6/dfc6c5a6d1a1db7c5f70b9a92e97a5450f8178c0/christ_nephites_art_lds.png"
+  },
+  {
+    "chapters": [
+      "3 Nephi 17",
+      "3 Nephi 18",
+      "3 Nephi 19"
+    ],
+    "title": "Behold, My Joy Is Full",
+    "begin": "September 28 2020",
+    "end": "October",
+    "image": "https://assets.ldscdn.org/28/f9/28f9195eb0967353b8f3691811cebf0ddebbd16c/christ_blessing_nephite_apostles_kapp.png"
+  },
+  {
+    "chapters": [
+      "3 Nephi 20",
+      "3 Nephi 21",
+      "3 Nephi 22",
+      "3 Nephi 23",
+      "3 Nephi 24",
+      "3 Nephi 25",
+      "3 Nephi 26"
+    ],
+    "title": "Ye Are the Children of the Covenant",
+    "begin": "October 12 2020",
+    "end": "October 18 2020",
+    "image": "https://assets.ldscdn.org/81/fc/81fc8d8e5f5b34e0ab1c725f74fd7c444b633052/illustrations_scriptures_book_of_mormon_christ.png"
+  },
+  {
+    "chapters": [
+      "3 Nephi 27",
+      "3 Nephi 28",
+      "3 Nephi 29",
+      "3 Nephi 30",
+      "4 Nephi 1"
+    ],
+    "title": "There Could Not Be a Happier People",
+    "begin": "October 19 2020",
+    "end": "October 25 2020",
+    "image": "https://assets.ldscdn.org/aa/1c/aa1c2e599c3271e598aa2f3701ff32d7848a6255/christ_prayer_art_lds.png"
+  },
+  {
+    "chapters": [
+      "Mormon 1",
+      "Mormon 2",
+      "Mormon 3",
+      "Mormon 4",
+      "Mormon 5",
+      "Mormon 6"
+    ],
+    "title": "I Would That I Could Persuade All to Repent",
+    "begin": "October 26 2020",
+    "end": "November 1 2020",
+    "image": "https://assets.ldscdn.org/d8/4d/d84dfc47cf6267bb00f3238ac41305e397b0fa7a/mormon_abridging_plates_lovell.png"
+  },
+  {
+    "chapters": [
+      "Mormon 7",
+      "Mormon 8",
+      "Mormon 9"
+    ],
+    "title": "I Speak unto You As If Ye Were Present",
+    "begin": "November 2 2020",
+    "end": "November 8 2020",
+    "image": "https://assets.ldscdn.org/16/7a/167a06e0920dbe290f5739d3860cc77671fa42c0/book_of_mormon_moroni_plates.png"
+  },
+  {
+    "chapters": [
+      "Ether 1",
+      "Ether 2",
+      "Ether 3",
+      "Ether 4",
+      "Ether 5"
+    ],
+    "title": "Rend That Veil of Unbelief",
+    "begin": "November 9 2020",
+    "end": "November 15 2020",
+    "image": "https://assets.ldscdn.org/22/d4/22d4bfeaee186bf26a4bc75eb712324e500e5f11/the_jaredites_leaving_babel.png"
+  },
+  {
+    "chapters": [
+      "Ether 6",
+      "Ether 7",
+      "Ether 8",
+      "Ether 9",
+      "Ether 10",
+      "Ether 11"
+    ],
+    "title": "That Evil May Be Done Away",
+    "begin": "November 16 2020",
+    "end": "November 22 2020",
+    "image": "https://assets.ldscdn.org/fb/66/fb66edaacac6b2cac91c808e88a01af2ba45c7ca/i_will_bring_you_up_again_out_of_the_depths.png"
+  },
+  {
+    "chapters": [
+      "Ether 12",
+      "Ether 13",
+      "Ether 14",
+      "Ether 15"
+    ],
+    "title": "By Faith All Things Are Fulfilled",
+    "begin": "November 23 2020",
+    "end": "November 29 2020",
+    "image": "https://assets.ldscdn.org/92/0a/920ac9421136723fcff62d86db3c16515e168b28/etther_hiding.png"
+  },
+  {
+    "chapters": [
+      "Moroni 1",
+      "Moroni 2",
+      "Moroni 3",
+      "Moroni 4",
+      "Moroni 5",
+      "Moroni 6"
+    ],
+    "title": "To Keep Them in the Right Way",
+    "begin": "November 30 2020",
+    "end": "December",
+    "image": "https://assets.ldscdn.org/37/5c/375ccf5d1cafb55a511bfc7aafb0cc2539e574bf/alma_baptizing_waters_of_mormon.png"
+  },
+  {
+    "chapters": [
+      "Moroni 7",
+      "Moroni 8",
+      "Moroni 9"
+    ],
+    "title": "May Christ Lift Thee Up",
+    "begin": "December 7 2020",
+    "end": "December 13 2020",
+    "image": "https://assets.ldscdn.org/c3/cf/c3cf1a7954a0efe3dd560adfe40424efc1b19c58/moroni_gold_plates_in_cave.png"
+  },
+  {
+    "chapters": [
+      "Moroni 10"
+    ],
+    "title": "Come unto Christ, and Be Perfected in Him",
+    "begin": "December 14 2020",
+    "end": "December 20 2020",
+    "image": "https://assets.ldscdn.org/a1/e3/a1e3bb777f8795db1c8e3b61a95d230c90e12bb5/christ_nephites.png"
   }
 ]
