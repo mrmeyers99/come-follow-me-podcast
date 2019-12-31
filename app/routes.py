@@ -7,6 +7,7 @@ import json
 from app.client import Client
 from flask import Response
 from flask_restful import reqparse
+from xml.sax.saxutils import escape
 
 @app.route('/')
 @app.route('/index')
@@ -63,7 +64,7 @@ def index():
   <itunes:summary></itunes:summary>
   <itunes:subtitle></itunes:subtitle>
   <itunesu:category itunesu:code="112" />
-  <enclosure url=\"""" + chapters[index]['url'] + """\" type="audio/mpeg" />
+  <enclosure url=\"""" + escape(chapters[index]['url']) + """\" type="audio/mpeg" />
   <guid>""" + chapters[index]['url'] + """</guid>
   <pubDate>""" + chapter_date.strftime('%a, %d %b %Y %H:%M:%S EST') + """</pubDate>
 </item>"""
