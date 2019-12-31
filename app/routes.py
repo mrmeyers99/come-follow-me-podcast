@@ -71,6 +71,7 @@ def index():
         if index % math.ceil(len(chapters) / args['speadOverDays']) == 0:
             chapter_date = chapter_date + timedelta(days=1)
         index += 1
+        chapter_date = chapter_date + timedelta(seconds=1)
 
     info += """
 </channel>
