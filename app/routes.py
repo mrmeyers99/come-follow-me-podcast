@@ -9,10 +9,10 @@ from flask import Response
 from flask_restful import reqparse
 from xml.sax.saxutils import escape
 
+
 @app.route('/')
 @app.route('/index')
 def index():
-
     parser = reqparse.RequestParser()
     parser.add_argument('weekly', type=bool, default=False)
     args = parser.parse_args()
@@ -52,9 +52,12 @@ def index():
 
     chapter_date = lesson['start_date']
     chapters = lesson['chapters']
+    chapters_per_day = len(chapters) / 5.0
+    count = 0
+    days_left = 5.0
 
     for index in range(0, len(chapters)):
-        if args['weekly'] == False and chapter_date > datetime.now():
+        if not args['weekly'] and chapter_date > datetime.now():
             break
 
         info += """
@@ -69,8 +72,12 @@ def index():
   <guid>""" + escape(chapters[index]['url']) + """</guid>
   <pubDate>""" + chapter_date.strftime('%a, %d %b %Y %H:%M:%S EST') + """</pubDate>
 </item>"""
-        if index % math.ceil(len(chapters) / 5) == 0:
+        count += 1
+        if count == math.ceil(chapters_per_day):
+            count = 0
+            days_left -= 1
             chapter_date = chapter_date + timedelta(days=1)
+            chapters_per_day = (len(chapters) - index - 1) / days_left
         index += 1
         chapter_date = chapter_date + timedelta(seconds=1)
 
