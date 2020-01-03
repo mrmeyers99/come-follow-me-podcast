@@ -77,7 +77,7 @@ def index():
             count = 0
             days_left -= 1
             chapter_date = chapter_date + timedelta(days=1)
-            chapters_per_day = 0 if days_left == 0 else (len(chapters) - index - 1) / days_left
+            chapters_per_day = 0 if days_left <= 0 else (len(chapters) - index - 1) / days_left
         index += 1
         chapter_date = chapter_date + timedelta(seconds=1)
 
