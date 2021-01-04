@@ -27,26 +27,30 @@ def split_chapters(chapter_info):
     print(flattened_chapters)
     return flattened_chapters
 
-year = 2020
+year = 2021
 if year == 2019:
     manual = "come-follow-me-for-individuals-and-families-new-testament-2019"
-else:
+elif year == 2020:
     manual = "come-follow-me-for-individuals-and-families-book-of-mormon-2020"
+else:
+    manual = "come-follow-me-for-individuals-and-families-doctrine-and-covenants-2021"
 
 lessons = []
 
 def fetch_lesson_info(week, manual):
-    r = requests.get(url="https://www.lds.org/study/manual/" + manual + "/" + f'{week:02}' + "?lang=eng")
+    url = "https://www.lds.org/study/manual/" + manual + "/" + f'{week:02}' + "?lang=eng"
+    print(url)
+    r = requests.get(url=url)
     if r.status_code == 404:
         return None
 
     parser = etree.HTMLParser(encoding="utf-8")
     r.encoding = "utf-8"
-    print(r.encoding)
+    #print(r.encoding)
     #print(r.text)
     tree = etree.parse(StringIO(r.text), parser)
-    res = tree.xpath("/html/head/meta[@name='description']/@content")[0]
-    print(res)
+    res = tree.xpath("/html/head/meta[@name='title']/@content")[0]
+    # print(res)
     # regex = r"(\w+)\s*(\d+)–([A-Za-z]*)\s*(\d+)\.\s*(.*)"
     # matches = re.finditer(regex, res, re.MULTILINE)
     #
@@ -128,6 +132,43 @@ def main():
                 'end':  "April 12 " + str(year),
                 'image': "https://assets.ldscdn.org/56/79/56797719a7244fdf4e6ce1d788712c2e95b72907/christ_risen_apostles.png"
             }
+        elif week == 2 and year == 2021:
+            lesson = {
+                'chapters': ["Joseph Smith - History"],
+                'title': "I Saw a Pillar of Light",
+                'begin': "January 4 " + str(year),
+                'end':  "January 10 " + str(year),
+                'image': "https://assets.ldscdn.org/db/82/db82cb1b5f5ca7536cb9602a7acb3c1e448c36a2/olsen_grove_sacred_lds_mormon.jpeg"
+            }
+        elif week == 3 and year == 2021:
+            lesson = {
+                'chapters': ["Doctrine and Covenants 2"],
+                'title': "The Hearts of the Children Shall Turn to Their Fathers",
+                'begin': "January 1 " + str(year),
+                'end':  "January 17 " + str(year),
+                'image': "https://assets.ldscdn.org/67/b5/67b5b9024bb68329b07a9b7eec3af9d78e8d2bcd/oil_painting_michael_malm.jpeg"
+            }
+        elif week == 7 and year == 2021:
+            lesson =   {
+               "chapters": [
+                   "Doctrine and Covenants 12",
+                   "Doctrine and Covenants 13"
+               ],
+               "title": "Upon You My Fellow Servants",
+               "begin": "February 8 2021",
+               "end": "February 14 2021",
+               "image": "https://assets.ldscdn.org/13/fe/13fe00dc1d2cf16cd4510b7f909b0429d407bb5a/joseph_baptizes_oliver_cowdery_parson.jpeg"
+           }
+        elif week == 14 and year == 2021:
+            lesson =     {
+                 "chapters": [
+                     "Living Christ"
+                 ],
+                 "title": "I Am He Who Liveth, I Am He Who Was Slain",
+                 "begin": "March 29 2021",
+                 "end": "April 4 2021",
+                 "image": "https://assets.ldscdn.org/9d/cd/9dcd98c44afd0381f97655de08986f50aa9dd477/jesus_christ_prayer_rock.jpeg"
+             },
         else:
             lesson = fetch_lesson_info(week, manual)
 
