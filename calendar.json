@@ -766,17 +766,15 @@
     "end": "March 28 2021",
     "image": "https://assets.ldscdn.org/6a/0e/6a0e08c4a710fa4bcdb6bb756c29ac3e6c3b3856/jesus_christ_knee_bow.jpeg"
   },
-  [
-    {
-      "chapters": [
-        "Living Christ"
-      ],
-      "title": "I Am He Who Liveth, I Am He Who Was Slain",
-      "begin": "March 29 2021",
-      "end": "April 4 2021",
-      "image": "https://assets.ldscdn.org/9d/cd/9dcd98c44afd0381f97655de08986f50aa9dd477/jesus_christ_prayer_rock.jpeg"
-    }
-  ],
+  {
+    "chapters": [
+      "Living Christ"
+    ],
+    "title": "I Am He Who Liveth, I Am He Who Was Slain",
+    "begin": "March 29 2021",
+    "end": "April 4 2021",
+    "image": "https://assets.ldscdn.org/9d/cd/9dcd98c44afd0381f97655de08986f50aa9dd477/jesus_christ_prayer_rock.jpeg"
+  },
   {
     "chapters": [
       "Doctrine and Covenants 30",
