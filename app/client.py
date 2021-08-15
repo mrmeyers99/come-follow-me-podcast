@@ -10,7 +10,8 @@ import json
 
 class Client:
 
-    def find_lesson(self, calendar, date):
+    @staticmethod
+    def find_lesson(calendar, date):
         for lesson in calendar:
             print(lesson)
             if datetime.strptime(lesson['begin'], '%B %d %Y') <= date <= datetime.strptime(lesson['end'], '%B %d %Y'):
