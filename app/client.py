@@ -14,6 +14,7 @@ class Client:
     def find_lesson(calendar, date):
         for lesson in calendar:
             print(lesson)
+            print("begin: ", datetime.strptime(lesson['begin'], '%B %d %Y'), "; end: ", datetime.strptime(lesson['end'], '%B %d %Y'))
             if datetime.strptime(lesson['begin'], '%B %d %Y') <= date <= datetime.strptime(lesson['end'], '%B %d %Y'):
                 return lesson
         raise Exception("Could not find lesson for " + date.strftime("%d/%m/%Y"))
