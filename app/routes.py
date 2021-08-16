@@ -1,5 +1,7 @@
 import math
 
+from werkzeug.utils import redirect
+
 from app import app
 from datetime import datetime, timedelta
 import json
@@ -92,3 +94,10 @@ def index():
 def urls():
     d2 = json.load(open("book_urls.json"))
     return json.dumps(d2)
+
+
+@app.route('/currentLesson')
+def current_lesson():
+    client = Client()
+    lesson = client.get_lesson_for_date(datetime.today())
+    return redirect(lesson['url'])

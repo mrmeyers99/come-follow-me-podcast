@@ -43,6 +43,8 @@ def fetch_lesson_info(week, manual):
     r = requests.get(url=url)
     if r.status_code == 404:
         return None
+    else:
+        print(r.status_code)
 
     parser = etree.HTMLParser(encoding="utf-8")
     r.encoding = "utf-8"
@@ -89,7 +91,8 @@ def fetch_lesson_info(week, manual):
         'title': title,
         'begin': start_month + " " + start_date + " " + str(year),
         'end':  end_month if end_month != "" else start_month + " " + end_date + " " + str(year),
-        'image': image
+        'image': image,
+        'url': url
     }
 
     print(json.dumps(lesson))
