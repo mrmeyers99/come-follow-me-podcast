@@ -4,7 +4,7 @@ import requests
 import re
 from lxml import etree
 from io import StringIO
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
 
 
@@ -14,8 +14,10 @@ class Client:
     def find_lesson(calendar, date):
         for lesson in calendar:
             print(lesson)
-            print("begin: ", datetime.strptime(lesson['begin'], '%B %d %Y'), "; end: ", datetime.strptime(lesson['end'], '%B %d %Y'))
-            if datetime.strptime(lesson['begin'], '%B %d %Y') <= date.date() <= datetime.strptime(lesson['end'], '%B %d %Y'):
+            begin = datetime.strptime(lesson['begin'], '%B %d %Y')
+            end = datetime.strptime(lesson['end'], '%B %d %Y') + timedelta(days=1)
+            print("begin: ", begin, "; end: ", end)
+            if begin <= date < end:
                 return lesson
         raise Exception("Could not find lesson for " + date.strftime("%d/%m/%Y"))
 
