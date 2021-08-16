@@ -100,4 +100,5 @@ def urls():
 def current_lesson():
     client = Client()
     lesson = client.get_lesson_for_date(datetime.today())
+    print(json.dumps(lesson))
     return redirect(lesson['url'])
