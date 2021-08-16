@@ -31,6 +31,7 @@ class Client:
             "title": lesson['title'],
             "start_date": datetime.strptime(lesson['begin'], '%B %d %Y'),
             "end_date": datetime.strptime(lesson['end'], '%B %d %Y'),
+            "url": lesson['url'],
             "chapters": [{"name": c.replace(u'\xa0', u' '), "url": u}
                          for c in lesson['chapters'] for u in urls[c]]
         }
